@@ -1,6 +1,6 @@
 # Invoice Generator
 
-A simple, flexible invoice generator built with [Bun](https://bun.sh/) and [React PDF](https://react-pdf.org/), wrapped in a Raycast script for one‑click PDF creation and preview.
+A simple, flexible invoice generator built with [Bun](https://bun.sh/) and [React PDF](https://react-pdf.org/), wrapped in a Raycast script for one‑click PDF creation and preview for MacOs.
 
 ## 🚀 Features
 
@@ -24,9 +24,9 @@ invoice-generator/
 │   │       └── <client-slug>.yaml # Per-client data
 │   └── pdf/
 │       └── Invoice.tsx    # React PDF component
-├── out/                   # Generated PDFs
 ├── package.json
-└── README.md
+├── README.md
+└── generate-invoice-<company-name>.sh # Raycast script
 ```
 
 ---
@@ -102,19 +102,15 @@ taxRate: 0.21 # 21% VAT
 3. **Generate an invoice**:
 
    - **Terminal**:
+
      ```bash
-     bun run scripts/generate.tsx <client-slug> YYYY-MM-DD YYYY-MM-DD
+     # If you configured a `generate` script in package.json:
+     bun run generate <client-slug> YYYY-MM-DD YYYY-MM-DD
      ```
 
-   ```
    - **Raycast**:
-     1. Install the script in Raycast by pointing it to the `scripts/generate.sh` (or your wrapper file).
-     2. Assign a shortcut or run the “Generate Invoice” command.
-     3. Enter the client slug, start date, and end date when prompted.
 
-   ```
-
-4. **Find your PDF** in the `out/` folder (or your configured output path, e.g. `~/Downloads`).
+4. **Find your PDF** in the `~/Downloads` folder.
 
 ---
 
@@ -133,4 +129,4 @@ Feel free to open issues or PRs to add features, fix bugs, or improve documentat
 
 ## 📄 License
 
-MIT © Antoine Dev
+MIT © Your Name
