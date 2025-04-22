@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Generate Invoice Antoine Dev
-# @raycast.mode    compact
+# @raycast.title Generate Invoice 
+# @raycast.mode compact
 # @raycast.packageName Invoicing
 
 # Optional parameters:
@@ -12,14 +12,14 @@
 # @raycast.argument3 { "type": "text", "placeholder": "End YYYY‑MM‑DD" }
 
 # Documentation:
-# @raycast.description Build an invoice PDF with Bun and open it
-# @raycast.author Your Name
-# @raycast.authorURL https://github.com/you
+# @raycast.description Generate an invoice PDF in a single command
+# @raycast.author Maxime Antoine
+# @raycast.authorURL https://github.com/maximeantoine1997
 set -e
 
 # make sure bun is on PATH
 export PATH="$HOME/.bun/bin:$PATH"
-PROJECT_DIR="$HOME/Projects/Antoine Dev/invoice-generator"
+PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$PROJECT_DIR"
 
 echo "Generating invoice for $1 from $2 to $3"
