@@ -129,4 +129,4 @@ Feel free to open issues or PRs to add features, fix bugs, or improve documentat
 
 ## 📄 License
 
-MIT © Your Name
+MIT © Antoine Dev
