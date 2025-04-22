@@ -59,4 +59,4 @@ const invoiceData: InvoiceProps = {
 const outFile = resolve(`${process.env.HOME}/Downloads`, `${invoiceId}.pdf`);
 
 await renderToFile(<InvoicePDF {...invoiceData} />, outFile);
-console.log(outFile);
+console.log(`Invoice saved in ${outFile}`);
