@@ -6,7 +6,7 @@
 # @raycast.packageName Invoicing
 
 # Optional parameters:
-# @raycast.icon 📄
+# @raycast.icon 💰
 # @raycast.argument1 { "type": "text", "placeholder": "Client slug" }
 # @raycast.argument2 { "type": "text", "placeholder": "Start YYYY‑MM‑DD" }
 # @raycast.argument3 { "type": "text", "placeholder": "End YYYY‑MM‑DD" }
